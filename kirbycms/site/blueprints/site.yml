@@ -1,0 +1,37 @@
+title: Website
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      pages:
+        label: alle Seiten
+        type: pages
+        status: all
+  right:
+    width: 1/2
+    sections:
+      meta:
+        type: fields
+        fields:
+          sitetitle:
+            label: Seitentitel
+            type: text
+          metakeywords:
+            label: Keywords
+            type: structure
+            fields:
+              keyword:
+                label: Keyword
+                type: text
+          metaauthor:
+            label: Meta Autor:in
+            type: text
+          footer:
+            label: Footer
+            type: textarea
+            size: tiny
+          footercopyright:
+            label: Footer Copyright
+            type: textarea
+            size: tiny

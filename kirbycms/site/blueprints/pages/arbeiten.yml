@@ -1,0 +1,6 @@
+title: Arbeiten
+
+sections:
+  projects:
+    type: pages
+    layout: cards

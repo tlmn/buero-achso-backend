@@ -1,0 +1,74 @@
+title: Arbeit
+
+columns:
+  left:
+    width: 1/3
+    sticky: true
+    sections:
+      meta:
+        type: fields
+        fields:
+          metaheadline:
+            label: Metadaten der Seite
+            type: headline
+          metatitle:
+            label: Titel
+            type: text
+          metadescription:
+            label: SEO-Beschreibung
+            type: text
+            maxlength: 200
+          metaimage:
+            label: SEO-Vorschaubild
+            type: files
+            multiple: false
+            layout: cards
+            image:
+              ratio: 4/3
+  right:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          contentheadline:
+            label: Inhalt
+            type: headline
+          heading:
+            label: Titel
+            type: text
+          subline:
+            label: Unterzeile
+            type: text
+          credits:
+            label: Credits
+            type: textarea
+            size: tiny
+          description:
+            label: Beschreibung
+            type: textarea
+            size: medium
+      gallery:
+        type: fields
+        fields:
+          galleryheadline:
+            label: Bilder
+            type: headline
+          coverimage:
+            label: Vorschaubild
+            type: files
+            multiple: false
+            layout: cards
+            image:
+              ratio: 4/3
+          images:
+            label: Galeriebilder
+            type: files
+            multiple: true
+            layout: cards
+            size: tiny
+            empty: field.blocks.gallery.images.empty
+            uploads:
+              template: blocks/image
+            image:
+              ratio: 1/1
