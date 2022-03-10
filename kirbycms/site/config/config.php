@@ -1,4 +1,5 @@
 <?php
+include 'env.php';
 
 return [
     'api' => [
@@ -8,6 +9,11 @@ return [
     'thumbs' => [
         'srcsets' => [
             'default' => [300, 800, 1024],
+        ],
+    ],
+    'pju.webhook-field.hooks' => [
+        'production' => [
+            'url' => $DEPLOY_HOOK,
         ],
     ],
 ];
