@@ -14,6 +14,11 @@ columns:
       meta:
         type: fields
         fields:
+          deploy:
+            type: webhook
+            label: Deploy Production Site
+            hook: production
+            debug: false
           sitetitle:
             label: Seitentitel
             type: text
@@ -35,8 +40,3 @@ columns:
             label: Footer Copyright
             type: textarea
             size: tiny
-          deploy:
-            type: webhook
-            label: Deploy Production Site
-            hook: production
-            debug: false
