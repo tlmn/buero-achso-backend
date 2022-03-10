@@ -19,7 +19,7 @@ columns:
             type: text
             maxlength: 200
           metaimage:
-            label: SEO-Vorschaubild
+            label: SEO-Vorschaubild (1200x630px) (1200x630px)
             type: files
             multiple: false
             layout: cards
@@ -37,14 +37,17 @@ columns:
           heading:
             label: Titel
             type: text
+            width: 1/4
           subline:
             label: Unterzeile
             type: text
+            width: 3/4
           portraitimage:
             label: Portrait-Foto
             type: files
             multiple: false
             layout: cards
+            width: 1/2
             image:
               ratio: 4/3
           portraitimagehover:
@@ -52,6 +55,7 @@ columns:
             type: files
             multiple: false
             layout: cards
+            width: 1/2
             image:
               ratio: 4/3
           contactinfo:

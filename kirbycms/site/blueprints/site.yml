@@ -22,6 +22,11 @@ columns:
           sitetitle:
             label: Seitentitel
             type: text
+            width: 1/2
+          metaauthor:
+            label: Meta Autor:in
+            type: text
+            width: 1/2
           metakeywords:
             label: Keywords
             type: structure
@@ -29,14 +34,13 @@ columns:
               keyword:
                 label: Keyword
                 type: text
-          metaauthor:
-            label: Meta Autor:in
-            type: text
           footer:
             label: Footer
             type: textarea
-            size: tiny
+            size: small
+            width: 1/2
           footercopyright:
             label: Footer Copyright
             type: textarea
-            size: tiny
+            size: small
+            width: 1/2
