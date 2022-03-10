@@ -19,6 +19,7 @@ jobs:
         run: |
           cd ./kirbycms
           composer install
+          echo "<?php \$DEPLOY_HOOK ='${{secrets.DEPLOY_HOOK}}';" > env.php
           echo "${{secrets.DEPLOY_KEY}}" > deploy_key
             chmod 600 ./deploy_key
             rsync --exclude-from="rsync_exclude.txt" -chav --delete \
