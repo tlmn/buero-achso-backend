@@ -35,3 +35,8 @@ columns:
             label: Footer Copyright
             type: textarea
             size: tiny
+          deploy:
+            type: webhook
+            label: Deploy Production Site
+            hook: production
+            debug: false
