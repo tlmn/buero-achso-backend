@@ -1,0 +1,14 @@
+title: Bild
+
+accept:
+  extension: jpg, png
+
+fields:
+  alt:
+    label: Alt Text
+    type: text
+    width: 1/2
+  credits:
+    label: Credits
+    type: text
+    width: 1/2
