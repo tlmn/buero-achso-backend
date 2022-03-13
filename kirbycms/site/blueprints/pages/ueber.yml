@@ -12,17 +12,20 @@ columns:
             label: Metadaten der Seite
             type: headline
           metatitle:
-            label: Titel
+            label: Seiten-Titel
             type: text
+            required: true
           metadescription:
             label: SEO-Beschreibung
             type: text
             maxlength: 200
+            required: true
           metaimage:
-            label: SEO-Vorschaubild (1200x630px) (1200x630px)
+            label: SEO-Vorschaubild (1200x630px)
             type: files
             multiple: false
             layout: cards
+            required: true
             image:
               ratio: 4/3
   right:
