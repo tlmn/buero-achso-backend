@@ -34,6 +34,14 @@ columns:
       content:
         type: fields
         fields:
+          heading:
+            label: Titel
+            type: text
+            width: 1/4
+          subline:
+            label: Unterzeile
+            type: text
+            width: 3/4
           contentheadline:
             label: Inhalt
             type: headline
