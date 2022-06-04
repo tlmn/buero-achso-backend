@@ -14,14 +14,17 @@ columns:
           metatitle:
             label: Titel
             type: text
+            required: true
           metadescription:
             label: SEO-Beschreibung
             type: text
             maxlength: 200
+            required: true
           metaimage:
-            label: SEO-Vorschaubild
+            label: SEO-Vorschaubild (1200x630px)
             type: files
             multiple: false
+            required: true
             layout: cards
             image:
               ratio: 4/3
@@ -37,13 +40,11 @@ columns:
           heading:
             label: Titel
             type: text
+            width: 1/4
           subline:
             label: Unterzeile
             type: text
-          credits:
-            label: Credits
-            type: textarea
-            size: tiny
+            width: 3/4
           description:
             label: Beschreibung
             type: textarea
